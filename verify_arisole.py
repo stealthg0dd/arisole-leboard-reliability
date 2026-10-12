@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify published arisole-eval 0.1.3 against LeBoard multi-task eval_info.json.
+"""Verify published arisole-eval 0.1.4 against LeBoard multi-task eval_info.json.
 
 Separates:
   A) Package multi-task parsing + unpaired rates (arisole-eval authority)
@@ -10,7 +10,7 @@ usage:
   python verify_arisole.py <root> [arisole-executable]
 
 <root> holds <run>/{eval_info.json,run.json} and analysis_out.json.
-Exit 0 only if version is exactly 0.1.3 and checks pass.
+Exit 0 only if version is exactly 0.1.4 and checks pass.
 """
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-REQUIRED_VERSION = "0.1.3"
+REQUIRED_VERSION = "0.1.4"
 
 
 def main() -> int:
