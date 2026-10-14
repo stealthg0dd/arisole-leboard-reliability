@@ -38,16 +38,16 @@ One policy, one recipe, one dataset, 10k steps (not converged). Eval-time noise 
 # 1. fetch the files in manifest.json into <root>/<run>/eval_info.json and run.json
 #    (https://huggingface.co/datasets/rogation/leboard-training-runs/resolve/f25f8a7603fcca023d16694dd01b9cb8280741b8/<run>/eval-10000/eval_info.json)
 python analysis.py <root>                         # writes <root>/analysis_out.json (standard library only)
-pip install arisole-eval==0.1.4
+pip install arisole-eval==0.1.5
 python verify_arisole.py <root> arisole            # checks arisole-eval's success rates against analysis.py
 ```
-`arisole-eval` 0.1.4 (like 0.1.2) reports unpaired success rates with binomial SE for these multi-task files and deliberately does not report transitions, because the files carry no shared per-episode seeds. The transition numbers above come from `analysis.py`, not from arisole-eval.
+`arisole-eval` 0.1.5 (like 0.1.2) reports unpaired success rates with binomial SE for these multi-task files and deliberately does not report transitions, because the files carry no shared per-episode seeds. The transition numbers above come from `analysis.py`, not from arisole-eval.
 
 
 ## Public artifacts
 
 - Case study: https://www.arisole.com/developers/leboard-case-study
-- Package: https://pypi.org/project/arisole-eval/0.1.4/
+- Package: https://pypi.org/project/arisole-eval/0.1.5/
 - This repository is the reproducibility bundle (scripts, `analysis_out.json`, SHA-256 manifest).
 
 ## License
